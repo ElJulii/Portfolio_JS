@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body, .nav__list, main, nav {
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+}
+/*nav part*/
+nav {
+    container-name: naver;
+    container-type: inline-size;
+    border-bottom: solid 2px;
+    background-color: #48e;
+    padding: 30px 20px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav__item {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+
+.nav__item:hover:not(.nav__item:last-child) {
+    text-decoration: underline red;
+}
+
+.nav__button-form {
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+/*End nav part*/
+
+/*main section one*/
+main {
+    text-align: center;
+    margin: auto;
+    padding: 30px 5px;
+}
+
+.section-one__h3, h1 {
+    line-height: 5px;
+    height: auto;
+}
+
+.section-one__h3 {
+    margin-top: 0;
+}
+
+
+.section-one__photo-profile {
+    margin: auto;
+    background-image: url('/images-folder/yo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 350px;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+/*End main section one*/
+a {
+    text-decoration: none;
+}
+
+/*containers*/
+
+@media  screen and (min-width: 900px) {
+    body {
+        background-color: #ccc;
+    }
+
+    .nav__list {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    main {
+        width: 70vw;
+        background-color: white;
+    }
+}
