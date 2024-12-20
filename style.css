@@ -139,6 +139,9 @@ header {
 }
 
 .introduction-section__img {
+    background-image: url("/images-folder/yo.jpeg");
+    background-position: 70% center;
+    background-size: 170%;
     min-width: 250px;
     height: 350px;
     border: solid 2px #3FDB49;
