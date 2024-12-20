@@ -131,6 +131,24 @@ header {
 
 /*Main SECTION*/
 
-main {
+.main__introduction-section {
+    border-bottom: solid 2px white;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
 
+.introduction-section__img {
+    min-width: 250px;
+    height: 350px;
+    border: solid 2px #3FDB49;
+    border-radius: 10%;
+}
+
+h1 {
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: normal;
 }
