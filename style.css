@@ -1,21 +1,40 @@
 * {
     box-sizing: border-box;
-}
-body {
-    background-color: black;
-}
-
-body, nav {
+    padding: 0;
     margin: 0;
 }
+body {
+    background-color: white;
+}
 
-/*NAV SECTION*/
+
+/*NAV SECTION AND HEADER SECTION*/
+header {
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+}
+
+.header__mark {
+    display: inline;
+    color: white;
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+
+nav {
+
+}
 
 .nav__label-checkbox {
     font-size: 3rem;
     font-weight: 600;
     position: absolute;
     right: 10px;
+    top: 10px;
     cursor: pointer;
     color: #3FDB49;
 }
@@ -24,32 +43,42 @@ body, nav {
     display: none;
 }
 
-.nav__checkbox:checked ~ .nav__list {
-    display: flex;
+.nav__list {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding-top: 25%;
-    position: absolute;
-    width: 100vw;
-    height: 100vw;
-    top: 0;
+    gap: 60px;
+    background-color: #000000dd;
     z-index: -1;
 }
 
+.nav__checkbox:checked ~ .nav__list {
+    display: flex;
+}
+
 .nav__item {
+    text-align: center;
     list-style: none;
-    color: white;
 }
 
 .nav__item a {
     color: white;
     text-decoration: none;
     font-size: 1.4rem;
+    transition-property: color;
+    transition-duration: 0.5s;
 }
 
 .nav__item a:hover {
     color: #3FDB49;
-    text-shadow: 0 0 40px #3FDB49;
+    text-shadow: 0 0 40px #1fff33;
+}
+
+/*Main*/
+
+main {
+
 }
