@@ -182,14 +182,39 @@ h1 {
 }
 
 .skill__text-container p {
-    color: white;
+
     text-align: center;
 }
 
 .skill__text-container {
     border: solid 2px white;
     border-radius: 7px;
-    padding: 5px 15px;
+    padding: 6px 15px;
     width: 25%;
     max-width: 200px;
+    font-weight: 800;
+}
+
+.skill__js {
+    background-color: yellow;
+}
+
+.skill__css {
+    background-color: #190DFF;
+}
+
+.skill__html {
+    background-color: #FF8324;
+}
+
+.skill__react {
+    background-color: #11cfff;
+}
+
+.skill__git {
+    background-color: #F28D09;
+}
+
+.skill__uix {
+    background-color: #aaa;
 }
