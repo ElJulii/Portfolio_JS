@@ -218,3 +218,47 @@ h1 {
 .skill__uix {
     background-color: #aaa;
 }
+
+.skill__value-container {
+    padding: 10px 0 0 0;
+}
+
+.skill__value__container-container {
+    border: solid 2px white;
+    border-radius: 40px;
+    background-color: #ddd;
+    width: 80%;
+    height: 20px;
+    display: inline-block;
+}
+
+.skill__value__container-value {
+    background-color: #3FDB49;
+    height: 100%;
+    border-radius: 40px 0 0 40px;
+}
+
+.percent-80 {
+    width: 80%;
+}
+
+.percent-70 {
+    width: 70%;
+}
+
+.percent-90 {
+    width: 90%;
+}
+
+.percent-95 {
+    width: 95%;
+}
+
+.skill__value__percent {
+    display: inline-block;
+    color: white;
+    font-size: 1.6em;
+    margin-left: 20px;
+    position: relative;
+    bottom: 3px;
+}
