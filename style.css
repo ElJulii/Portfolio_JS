@@ -154,6 +154,23 @@ h1 {
     text-align: center;
     line-height: 50px;
     font-weight: normal;
+    font-size: 1.7em;
 }
 
+.main__skills-section {
 
+}
+
+.skills-section__tittle-container {
+    padding: 30px 10px;
+}
+
+.skills-section__tittle-text {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.skill__text-container p {
+    color: white;
+}
