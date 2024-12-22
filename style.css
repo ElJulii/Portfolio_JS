@@ -131,6 +131,10 @@ header {
 
 /*MAIN PART*/
 /*Photo and introduction section*/
+.main__container-introduction-skills {
+    container-type: inline-size;
+    container-name: container-intro-skills;
+}
 
 .main__introduction-section {
     border-bottom: solid 2px white;
@@ -143,10 +147,19 @@ header {
     background-image: url("/images-folder/yo.jpeg");
     background-position: 70% center;
     background-size: 170%;
+    max-width: 400px;
     min-width: 250px;
+    flex-grow: 1;
     height: 350px;
     border: solid 2px #3FDB49;
     border-radius: 10%;
+}
+
+.introduction-section__text-introduction {
+    flex-grow: 1;
+    flex-basis: 173px;
+    flex-wrap: nowrap;
+    max-width: 400px;
 }
 
 h1 {
@@ -159,10 +172,6 @@ h1 {
 }
 
 /* section of skills */
-
-.main__skills-section {
-
-}
 
 .skills-section__tittle-container {
     padding: 30px 10px;
@@ -261,4 +270,29 @@ h1 {
     margin-left: 20px;
     position: relative;
     bottom: 3px;
+}
+
+/*container skills and presentation*/
+@container  container-intro-skills (min-width: 650px) {
+    .main__introduction-section {
+        flex-direction: column;
+        gap: 10px;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .main__container-introduction-skills {
+        display: flex;
+    }
+
+    .main__skills-section {
+        flex-grow: 10;
+    }
+
+    .skills-section__skills-container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
