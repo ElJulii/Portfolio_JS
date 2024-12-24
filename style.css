@@ -135,18 +135,18 @@ header {
 .main__introduction-section {
     border-bottom: solid 2px white;
     padding: 20px;
-    display: flex;
-    gap: 20px;
+}
+
+.introduction-section__img, .introduction-section__text-introduction {
+    margin: auto;
 }
 
 .introduction-section__img {
     background-image: url("/images-folder/yo.jpeg");
-    background-position: 70% center;
-    background-size: 170%;
+    background-position: 100% center;
+    background-size: 120%;
     max-width: 350px;
-    min-width: 250px;
-    flex-grow: 1;
-    height: 350px;
+    height: 400px;
     border: solid 2px #3FDB49;
     border-radius: 10%;
 }
@@ -168,6 +168,11 @@ h1 {
 }
 
 /* section of skills */
+.main__skills-section {
+    container-type: inline-size;
+    container-name: skills;
+}
+
 
 .skills-section__tittle-container {
     padding: 30px 10px;
@@ -271,12 +276,9 @@ h1 {
 /*QR skills and presentation*/
 
 @media screen and (min-width: 650px) {
-    .main__introduction-section {
-        display: initial;
-    }
     .introduction-section__img {
         border-radius: 50%;
-        margin: auto;
+        height: 350px;
     }
     .main__container-introduction-skills {
         display: flex;
@@ -285,7 +287,9 @@ h1 {
     .main__skills-section {
         flex-grow: 10;
     }
+}
 
+@container skills (min-width: 400px) {
     .skills-section__skills-container {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
