@@ -147,7 +147,7 @@ header {
     background-image: url("/images-folder/yo.jpeg");
     background-position: 70% center;
     background-size: 170%;
-    max-width: 400px;
+    max-width: 350px;
     min-width: 250px;
     flex-grow: 1;
     height: 350px;
@@ -275,13 +275,15 @@ h1 {
 /*container skills and presentation*/
 @container  container-intro-skills (min-width: 650px) {
     .main__introduction-section {
-        flex-direction: column;
-        gap: 10px;
-        flex-grow: 1;
+        display: initial;
+    }
+    .introduction-section__img {
+        border-radius: 50%;
+        margin: auto;
     }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 650px) {
     .main__container-introduction-skills {
         display: flex;
     }
