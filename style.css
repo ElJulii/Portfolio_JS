@@ -280,7 +280,7 @@ h1 {
 
 /*QR skills and presentation*/
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 843px) {
     .introduction-section__img {
         border-radius: 50%;
         height: 350px;
