@@ -171,8 +171,8 @@ h1 {
 .main__skills-section {
     container-type: inline-size;
     container-name: skills;
+    border-bottom: solid 2px white;
 }
-
 
 .skills-section__tittle-container {
     padding: 30px 10px;
@@ -192,7 +192,6 @@ h1 {
 }
 
 .skill__text-container p {
-
     text-align: center;
 }
 
@@ -294,7 +293,7 @@ h1 {
     }
 }
 
-@container skills (min-width: 400px) {
+@container skills (min-width: 632px) {
     .skills-section__skills-container {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
