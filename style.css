@@ -169,7 +169,7 @@ h1 {
     container-type: inline-size;
     container-name: skills;
     border-bottom: solid 2px white;
-    background: linear-gradient(#000, #333 95%);
+    background: linear-gradient(#000, #333 95%, #000);
 }
 
 .skills-section__tittle-container {
