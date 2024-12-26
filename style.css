@@ -169,6 +169,7 @@ h1 {
     container-type: inline-size;
     container-name: skills;
     border-bottom: solid 2px white;
+    background: linear-gradient(#000, #333 95%);
 }
 
 .skills-section__tittle-container {
@@ -288,7 +289,7 @@ h1 {
 
     .main__skills-section {
         flex-grow: 10;
-        background-color: #222;
+        background: #222 none;
     }
 }
 
@@ -297,6 +298,5 @@ h1 {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
-
     }
 }
