@@ -168,7 +168,7 @@ h1 {
 .main__skills-section {
     container-type: inline-size;
     container-name: skills;
-    border-bottom: solid 2px white;
+    /*border-bottom: solid 2px white;*/
     background: linear-gradient(#000, #333 95%, #000);
 }
 
@@ -304,4 +304,63 @@ h1 {
 /* MAIN     content section*/
 .main__content-section {
     color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-section__title {
+    color: #1fff33;
+    font-size: 2em;
+}
+
+.content-section__title, .content-section__CV-container {
+    text-align: center;
+}
+
+.content__list {
+    padding: 0 30px;
+}
+
+.content-section-block a {
+    font-size: 2em;
+}
+
+.content__list li {
+    line-height: 40px;
+    font-size: 1.5em;
+}
+
+.content-section__languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-section__languages-item {
+    list-style: none;
+    height: 20vh;
+    border: solid 2px white;
+    border-radius: 20px;
+    position: relative;
+    padding: 50px 0 0 30px;
+    font-weight: 1000;
+    text-shadow: 0 0 10px black;
+}
+
+.content-section__languages-item:first-child {
+    margin-top: 20px;
+}
+
+.item-sp {
+    background: url("/images-folder/flags/img-flag-ecu.png") center / 60%;
+}
+
+.item-ru {
+    background: url("/images-folder/flags/img-flag-ru.png") center / 60%;
+}
+
+.item-uk {
+    background: url("/images-folder/flags/img-flag-uk.png") center / 100%;
 }
