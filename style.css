@@ -302,3 +302,6 @@ h1 {
 }
 
 /* MAIN     content section*/
+.main__content-section {
+    color: white;
+}
