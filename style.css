@@ -152,9 +152,6 @@ header {
 }
 
 .introduction-section__text-introduction {
-    flex-grow: 1;
-    flex-basis: 173px;
-    flex-wrap: nowrap;
     max-width: 400px;
 }
 
@@ -234,11 +231,11 @@ h1 {
 .skill__value-container {
     padding: 10px 0 0 0;
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 .skill__value__container-container {
-    border: solid 2px white;
+    border: solid 3px white;
     border-radius: 40px;
     background-color: #ddd;
     width: 80%;
@@ -250,7 +247,7 @@ h1 {
 }
 
 .skill__value__container-value {
-    background-color: #3FDB49;
+    background-color: #000/*#3FDB49*/;
     height: 100%;
     border-radius: 40px 0 0 40px;
 }
@@ -291,6 +288,7 @@ h1 {
 
     .main__skills-section {
         flex-grow: 10;
+        background-color: #222;
     }
 }
 
