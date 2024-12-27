@@ -168,8 +168,6 @@ h1 {
 .main__skills-section {
     container-type: inline-size;
     container-name: skills;
-    /*border-bottom: solid 2px white;*/
-    background: linear-gradient(#000, #333 95%, #000);
 }
 
 .skills-section__tittle-container {
@@ -236,9 +234,9 @@ h1 {
 }
 
 .skill__value__container-container {
-    border: solid 3px white;
+    border: solid 3px #aaa;
     border-radius: 40px;
-    background-color: #ddd;
+    background-color: white;
     width: 80%;
     height: 20px;
 }
@@ -248,7 +246,7 @@ h1 {
 }
 
 .skill__value__container-value {
-    background-color: #000/*#3FDB49*/;
+    background-color: #222/*#3FDB49*/;
     height: 100%;
     border-radius: 40px 0 0 40px;
 }
@@ -290,6 +288,15 @@ h1 {
     .main__skills-section {
         flex-grow: 10;
         background: #222 none;
+    }
+
+    .skill__value__container-container {
+        border-color: white;
+        background-color: white;
+    }
+
+    .skill__value__container-value {
+        background-color: black;
     }
 }
 
@@ -338,11 +345,14 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-section__languages-item {
     list-style: none;
-    height: 127px;
+    width: 253px;
+    height: 125px;
     border: solid 2px white;
     border-radius: 20px;
     position: relative;
@@ -356,15 +366,15 @@ h1 {
 }
 
 .item-sp {
-    background: url("/images-folder/flags/img-flag-ecu.png") center / 60%;
+    background: url("/images-folder/flags/img-flag-ecu.png") center / contain;
 }
 
 .item-ru {
-    background: url("/images-folder/flags/img-flag-ru.png") center / 60%;
+    background: url("/images-folder/flags/img-flag-ru.png") center / contain;
 }
 
 .item-uk {
-    background: url("/images-folder/flags/img-flag-uk.png") center / 100%;
+    background: url("/images-folder/flags/img-flag-uk.png") center / contain;
 }
 
 /*Contacts*/
@@ -380,6 +390,7 @@ h1 {
     list-style: none;
     min-width: 100px;
     height: 100px;
+    cursor: pointer;
 }
 
 .item-git {
