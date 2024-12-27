@@ -332,6 +332,8 @@ h1 {
     font-size: 1.5em;
 }
 
+/*Languages*/
+
 .content-section__languages-list {
     display: flex;
     flex-direction: column;
@@ -340,7 +342,7 @@ h1 {
 
 .content-section__languages-item {
     list-style: none;
-    height: 20vh;
+    height: 127px;
     border: solid 2px white;
     border-radius: 20px;
     position: relative;
@@ -363,4 +365,32 @@ h1 {
 
 .item-uk {
     background: url("/images-folder/flags/img-flag-uk.png") center / 100%;
+}
+
+/*Contacts*/
+.content-section__contact-list {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-section__contact-item {
+    list-style: none;
+    min-width: 100px;
+    height: 100px;
+}
+
+.item-git {
+    background: url("/images-folder/contacts/img2-git.png") center / contain;
+    border-radius: 50%;
+}
+
+.item-telegram {
+    background: url("/images-folder/contacts/img-telegram.png") center / contain;
+}
+
+.item-mail {
+    background: url("/images-folder/contacts/img-mail.png") center / contain;
 }
