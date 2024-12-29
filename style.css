@@ -278,31 +278,6 @@ h1 {
 
 /*QR skills and presentation*/
 
-@media screen and (min-width: 843px) {
-    .introduction-section__img {
-        border-radius: 50%;
-        height: 350px;
-    }
-    .main__container-introduction-skills {
-        display: flex;
-    }
-
-    .main__skills-section {
-        flex-grow: 10;
-        background: #222 none;
-        border-bottom: solid 2px white;
-    }
-
-    .skill__value__container-container {
-        border-color: white;
-        background-color: white;
-    }
-
-    .skill__value__container-value {
-        background-color: black;
-    }
-}
-
 @container skills (min-width: 632px) {
     .skills-section__skills-container {
         display: grid;
@@ -407,4 +382,74 @@ h1 {
 
 .item-mail {
     background: url("/images-folder/contacts/img-mail.png") center / contain;
+}
+
+/*Main media*/
+
+@media screen and (min-width: 843px) {
+    .introduction-section__img {
+        border-radius: 50%;
+        height: 350px;
+    }
+    .main__container-introduction-skills {
+        display: flex;
+    }
+
+    .main__skills-section {
+        flex-grow: 10;
+        background: #222 none;
+        border-bottom: solid 2px white;
+    }
+
+    .skill__value__container-container {
+        border-color: white;
+        background-color: white;
+    }
+
+    .skill__value__container-value {
+        background-color: black;
+    }
+
+    .main__content-section {
+        display: grid;
+        grid-template-rows: repeat(4, minmax(50px, auto));
+        grid-template-columns: repeat(5, minmax(50px, auto));
+    }
+
+    .content-section__experience-container {
+       grid-column: 1/span 2;
+        grid-row: 1/span 2;
+    }
+
+    .content-section__languages-container {
+        grid-column: 3/span 3;
+        grid-row: 1/span 2;
+    }
+    .content-section__contact-title-container {
+        grid-column: 1/span 2;
+        grid-row: 3/span 1;
+    }
+
+    .content-section__contact-info-container {
+        grid-column: 1/span 2;
+        grid-row: 4/span 1;
+    }
+
+    .content-section__pending-container {
+        grid-column: 3 /span 1;
+        grid-row: 3 / span 1;
+    }
+    .content-section__CV-container {
+        grid-column: 3 / span 1 ;
+        grid-row: 4 / span 1;
+    }
+
+    .content-section__studies-container {
+        grid-column: 4 / span 2;
+        grid-row: 3 /span 2;
+    }
+    .content-section__languages-list {
+        flex-direction: row;
+        align-items: baseline;
+    }
 }
