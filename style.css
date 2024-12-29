@@ -12,6 +12,8 @@ body {
 header {
     background-color: black;
     position: sticky;
+    top: 0;
+    z-index: 5;
     height: 10vh;
     container-type: inline-size;
     container-name: header;
@@ -288,6 +290,7 @@ h1 {
     .main__skills-section {
         flex-grow: 10;
         background: #222 none;
+        border-bottom: solid 2px white;
     }
 
     .skill__value__container-container {
