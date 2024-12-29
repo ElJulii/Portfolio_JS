@@ -320,40 +320,41 @@ h1 {
 
 /*Languages*/
 
+.content-section__languages-names-list {
+    display: none;
+}
+
 .content-section__languages-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    margin: 20px 0;
 }
 
 .content-section__languages-item {
     list-style: none;
-    width: 253px;
+    width: 200px;
     height: 125px;
-    border: solid 2px white;
     border-radius: 20px;
     position: relative;
-    padding: 50px 0 0 30px;
     font-weight: 1000;
     text-shadow: 0 0 10px black;
-}
-
-.content-section__languages-item:first-child {
-    margin-top: 20px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .item-sp {
-    background: url("/images-folder/flags/img-flag-ecu.png") center / contain;
+    background: url("/images-folder/flags/img-flag-ecu.png") center / 125% no-repeat;
 }
 
 .item-ru {
-    background: url("/images-folder/flags/img-flag-ru.png") center / contain;
+    background: url("/images-folder/flags/img-flag-ru.png") center / 125% no-repeat;
 }
 
 .item-uk {
-    background: url("/images-folder/flags/img-flag-uk.png") center / contain;
+    background: url("/images-folder/flags/img-flag-uk.png") center / 150% no-repeat;
 }
 
 /*Contacts*/
@@ -418,12 +419,14 @@ h1 {
     .content-section-block {
         background-color: #000;
         border-radius: 20px;
+        padding: 10px;
     }
 
     .main__content-section {
         display: grid;
         grid-template-rows: repeat(4, minmax(50px, auto));
         grid-template-columns: repeat(5, minmax(50px, auto));
+        gap: 15px;
     }
 
     .content-section__experience-container {
@@ -461,5 +464,23 @@ h1 {
     .content-section__languages-list {
         flex-direction: row;
         align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .content-section__contact-title-container, .content-section__CV-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-section__languages-names-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content-section__languages-names-item {
+        margin-top: 10px;
+        list-style: none;
+        font-size: 1.3rem;
     }
 }
