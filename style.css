@@ -137,6 +137,7 @@ header {
 .main__introduction-section {
     border-bottom: solid 2px white;
     padding: 20px;
+    background-color: #000;
 }
 
 .introduction-section__img, .introduction-section__text-introduction {
@@ -387,6 +388,10 @@ h1 {
 /*Main media*/
 
 @media screen and (min-width: 843px) {
+    body {
+        background-color: #222;
+    }
+
     .introduction-section__img {
         border-radius: 50%;
         height: 350px;
@@ -408,6 +413,11 @@ h1 {
 
     .skill__value__container-value {
         background-color: black;
+    }
+
+    .content-section-block {
+        background-color: #000;
+        border-radius: 20px;
     }
 
     .main__content-section {
