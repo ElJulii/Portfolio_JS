@@ -343,18 +343,22 @@ h1 {
     text-shadow: 0 0 10px black;
     text-align: center;
     padding-top: 40px;
+    lighting-color: black;
 }
 
 .item-sp {
-    background: url("/images-folder/flags/img-flag-ecu.png") center / 125% no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("/images-folder/flags/img-flag-ecu.png") center / contain no-repeat;
 }
 
 .item-ru {
-    background: url("/images-folder/flags/img-flag-ru.png") center / 125% no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("/images-folder/flags/img-flag-ru.png") center / contain no-repeat;
 }
 
 .item-uk {
-    background: url("/images-folder/flags/img-flag-uk.png") center / 150% no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("/images-folder/flags/img-flag-uk.png") center / 150% no-repeat;
 }
 
 /*Contacts*/
