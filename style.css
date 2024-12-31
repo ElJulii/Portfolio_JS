@@ -337,7 +337,6 @@ h1 {
     list-style: none;
     width: 200px;
     height: 125px;
-    border-radius: 20px;
     position: relative;
     font-weight: 1000;
     text-shadow: 0 0 10px black;
@@ -480,6 +479,7 @@ h1 {
     .content-section__languages-names-list {
         display: flex;
         justify-content: space-around;
+
     }
 
     .content-section__languages-names-item {
