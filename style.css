@@ -389,6 +389,34 @@ h1 {
     background: url("images-folder/contacts/img-mail.png") center / contain;
 }
 
+/*Projects Section*/
+
+.main__container-projects {
+    color: white;
+    text-align: center;
+}
+
+.container-projects__tittle {
+    margin: 40px 0 50px 0;
+    font-size: 2em;
+    color: #1fff33;
+    letter-spacing: 13px;
+}
+
+.container-projects__projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects-list__item {
+    border: solid white;
+    border-width: 2px 0;
+    height: 8rem;
+    padding-top: 10%;
+}
+
+
 /*Main media*/
 
 @media screen and (min-width: 843px) {
