@@ -249,7 +249,7 @@ h1 {
 }
 
 .skill__value__container-value {
-    background-color: #222/*#3FDB49*/;
+    background-color: #222;
     height: 100%;
     border-radius: 40px 0 0 40px;
 }
@@ -347,17 +347,17 @@ h1 {
 
 .item-sp {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-    ,url("/images-folder/flags/img-flag-ecu.png") center / contain no-repeat;
+    ,url("images-folder/flags/img-flag-ecu.png") center / contain no-repeat;
 }
 
 .item-ru {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-    ,url("/images-folder/flags/img-flag-ru.png") center / contain no-repeat;
+    ,url("images-folder/flags/img-flag-ru.png") center / contain no-repeat;
 }
 
 .item-uk {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-    ,url("/images-folder/flags/img-flag-uk.png") center / 150% no-repeat;
+    ,url("images-folder/flags/img-flag-uk.png") center / 150% no-repeat;
 }
 
 /*Contacts*/
@@ -377,16 +377,16 @@ h1 {
 }
 
 .item-git {
-    background: url("/images-folder/contacts/img2-git.png") center / contain;
+    background: url("images-folder/contacts/img2-git.png") center / contain;
     border-radius: 50%;
 }
 
 .item-telegram {
-    background: url("/images-folder/contacts/img-telegram.png") center / contain;
+    background: url("images-folder/contacts/img-telegram.png") center / contain;
 }
 
 .item-mail {
-    background: url("/images-folder/contacts/img-mail.png") center / contain;
+    background: url("images-folder/contacts/img-mail.png") center / contain;
 }
 
 /*Main media*/
