@@ -410,12 +410,44 @@ h1 {
 }
 
 .projects-list__item {
+    font-size: 3em;
+    font-weight: 800;
+    color: #1fff33;
+    letter-spacing: 10px;
     border: solid white;
     border-width: 2px 0;
     height: 10rem;
-    padding-top: 4.3rem;
+    padding-top: 3rem;
+    cursor: pointer;
 }
 
+.projects-list__item:hover {
+    text-decoration: underline;
+}
+
+.item-love {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("images-folder/projects/img-love.png") center / 100%  no-repeat;
+}
+
+.item-latinDay {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("images-folder/projects/img-latinDay.png") center / 100% no-repeat;
+}
+
+.item-schedule {
+
+}
+
+.item-apartments {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("images-folder/projects/img-apartments.png") center / 120% no-repeat;
+}
+
+.item-beauty {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("images-folder/projects/img-beauty.png") center / 100% no-repeat;
+}
 
 /*Main media*/
 
