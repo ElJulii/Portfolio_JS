@@ -412,8 +412,8 @@ h1 {
 .projects-list__item {
     border: solid white;
     border-width: 2px 0;
-    height: 8rem;
-    padding-top: 10%;
+    height: 10rem;
+    padding-top: 4.3rem;
 }
 
 
@@ -507,7 +507,6 @@ h1 {
     .content-section__languages-names-list {
         display: flex;
         justify-content: space-around;
-
     }
 
     .content-section__languages-names-item {
