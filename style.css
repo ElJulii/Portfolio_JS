@@ -266,8 +266,9 @@ h1 {
     width: 90%;
 }
 
-.percent-95 {
-    width: 95%;
+.percent-100 {
+    width: 100%;
+    border-radius: 40px;
 }
 
 .skill__value__percent {
@@ -394,6 +395,8 @@ h1 {
 .main__container-projects {
     color: white;
     text-align: center;
+    container-type: inline-size;
+    container-name: projects;
 }
 
 .container-projects__tittle {
@@ -436,7 +439,7 @@ h1 {
 }
 
 .item-schedule {
-
+    /*SCHEDULE*/
 }
 
 .item-apartments {
@@ -447,6 +450,29 @@ h1 {
 .item-beauty {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
     ,url("images-folder/projects/img-beauty.png") center / 100% no-repeat;
+}
+.projects-list__row {
+    display: none;
+}
+
+@container projects (min-width: 745px) {
+    .container-projects__projects-list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .projects-list__item {
+        border-width: 2px;
+        overflow: hidden;
+    }
+
+    .item-banished {
+        display: none;
+    }
+
+    .projects-list__row {
+        display: initial;
+    }
 }
 
 /*Main media*/
