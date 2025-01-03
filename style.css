@@ -479,6 +479,7 @@ h1 {
 
     .item_project_central {
         flex-grow: 3;
+        min-height: 10rem;
     }
 
     /*.item_project_mini {*/
