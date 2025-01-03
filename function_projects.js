@@ -1,32 +1,42 @@
-// Seleccionar los elementos
 const mainBox = document.querySelector('.main__container-projects');
 const box = document.querySelector('.item_project_central');
 
-// Altura predeterminada en píxeles (10rem = 160px si 1rem = 16px)
-const defaultHeight = 10 * 16;
-
-// Función para ajustar el height de box
+// Adjust the size of item_project_central
 function updateBoxHeight() {
-    // Obtener el ancho actual de main_box
     const mainBoxWidth = mainBox.offsetWidth;
 
     if (mainBoxWidth >= 745) {
-        // Si el ancho de main_box es mayor o igual a 745px
-        const boxWidth = box.offsetWidth; // Ancho actual de box
+        const boxWidth = box.offsetWidth;
 
-        // El height de box será siempre 0.5 veces su width
         const newHeight = boxWidth * 0.65;
 
-        // Aplicar la nueva altura
         box.style.height = `${newHeight}px`;
     } else {
-        // Si main_box es menor a 745px, restablecer altura a 10rem
         box.style.height = '10rem';
     }
 }
 
-// Escuchar el evento resize para detectar cambios en el tamaño de la ventana
 window.addEventListener('resize', updateBoxHeight);
 
-// Ejecutar la función una vez al inicio para establecer el estado inicial
 updateBoxHeight();
+
+// ROULETTE OF IMAGES
+
+const boxes = document.querySelectorAll('.projects-list__item');
+
+//arrows
+const right_arrow = document.querySelector('.row-right');
+const left_arrow = document.querySelector('.row-left');
+
+const projects = [
+    '/images-folder/projects/img-love.png',
+    '/images-folder/projects/img-latinDay.png',
+    '/images-folder/projects/img-calendar.png',
+    '/images-folder/projects/img-apartments.png',
+    '/images-folder/projects/img-beauty.png'
+]
+
+boxes.forEach((image, index ) => {
+    image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("${projects[index]}") center / 100% no-repeat`;
+})
