@@ -28,7 +28,7 @@ const boxes = document.querySelectorAll('.projects-list__item');
 const right_arrow = document.querySelector('.row-right');
 const left_arrow = document.querySelector('.row-left');
 
-const projects = [
+let projects = [
     '/images-folder/projects/img-love.png',
     '/images-folder/projects/img-latinDay.png',
     '/images-folder/projects/img-calendar.png',
@@ -36,7 +36,25 @@ const projects = [
     '/images-folder/projects/img-beauty.png'
 ]
 
-boxes.forEach((image, index ) => {
-    image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-    ,url("${projects[index]}") center / 100% no-repeat`;
+set_images_box(boxes, projects);
+right_arrow.addEventListener('click', () => {
+    projects = change_img_position(projects);
+    set_images_box(boxes, projects);
 })
+
+function change_img_position(array_images) {
+    let saver = array_images[array_images.length - 1]
+    for (let i = array_images.length - 1; i > -1; i--) {
+        if (i === 0) {
+            array_images[i] = saver;
+        } else  array_images[i] = array_images[i - 1];
+    }
+    return array_images;
+}
+
+function set_images_box (array_boxes, array_projects) {
+    array_boxes.forEach((image, index ) => {
+        image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    ,url("${array_projects[index]}") center / 200% no-repeat`;
+    })
+}

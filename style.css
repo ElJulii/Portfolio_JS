@@ -474,6 +474,7 @@ h1 {
 
     .projects-list__row {
         display: initial;
+        cursor: pointer;
         /*flex-grow: 1;*/
     }
 
