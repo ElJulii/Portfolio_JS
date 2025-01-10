@@ -443,6 +443,7 @@ h1 {
     .projects-list__item {
         border-width: 2px;
         overflow: hidden;
+        border-radius: 5%;
     }
 
     .item-banished {
@@ -452,11 +453,21 @@ h1 {
     .projects-list__row {
         display: initial;
         cursor: pointer;
+        font-size: 5rem;
+        transition: color 0.4s;
+    }
+
+    .projects-list__row:hover {
+        color: #1fff33;
     }
 
     .item_project_central {
         flex-grow: 3;
         min-height: 10rem;
+    }
+
+    .item_project_mini {
+        flex-grow: 1;
     }
 }
 
