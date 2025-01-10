@@ -428,29 +428,6 @@ h1 {
     text-decoration: underline;
 }
 
-/*.item-love {*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
-/*    ,url("images-folder/projects/img-love.png") center / 100%  no-repeat;*/
-/*}*/
-
-/*.item-latinDay {*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
-/*    ,url("images-folder/projects/img-latinDay.png") center / 100% no-repeat;*/
-/*}*/
-
-/*.item-schedule {*/
-/*    !*SCHEDULE*!*/
-/*}*/
-
-/*.item-apartments {*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
-/*    ,url("images-folder/projects/img-apartments.png") center / 120% no-repeat;*/
-/*}*/
-
-/*.item-beauty {*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
-/*    ,url("images-folder/projects/img-beauty.png") center / 100% no-repeat;*/
-/*}*/
 .projects-list__row {
     display: none;
 }
@@ -475,17 +452,12 @@ h1 {
     .projects-list__row {
         display: initial;
         cursor: pointer;
-        /*flex-grow: 1;*/
     }
 
     .item_project_central {
         flex-grow: 3;
         min-height: 10rem;
     }
-
-    /*.item_project_mini {*/
-
-    /*}*/
 }
 
 /*Main media*/

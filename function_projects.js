@@ -37,12 +37,19 @@ let projects = [
 ]
 
 set_images_box(boxes, projects);
+//events of the arrows
 right_arrow.addEventListener('click', () => {
-    projects = change_img_position(projects);
+    projects = change_img_position_right(projects);
     set_images_box(boxes, projects);
 })
 
-function change_img_position(array_images) {
+left_arrow.addEventListener('click', () => {
+    projects = change_img_position_left(projects);
+    set_images_box(boxes, projects);
+})
+
+//Function of the arrows
+function change_img_position_right(array_images) {
     let saver = array_images[array_images.length - 1]
     for (let i = array_images.length - 1; i > -1; i--) {
         if (i === 0) {
@@ -52,9 +59,21 @@ function change_img_position(array_images) {
     return array_images;
 }
 
+function change_img_position_left(array_images) {
+    let saver = array_images[0]
+    for (let i = 0; i < array_images.length; i++) {
+        if (i === array_images.length - 1) {
+            array_images[i] = saver;
+        } else  array_images[i] = array_images[i + 1];
+    }
+    return array_images;
+}
+
+//Adding images to the boxes
+
 function set_images_box (array_boxes, array_projects) {
     array_boxes.forEach((image, index ) => {
         image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-    ,url("${array_projects[index]}") center / 200% no-repeat`;
+    ,url("${array_projects[index]}") center / 180% no-repeat`;
     })
 }
