@@ -471,6 +471,42 @@ h1 {
     }
 }
 
+/*Footer section*/
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+    height: 30vh;
+    line-height: 35px;
+    background-color: black;
+    border-top: solid 3px white;
+}
+
+.footer__text {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__container h4, .footer__container a {
+    display: inline-block;
+}
+
+.footer__container a, .footer__last--message p a {
+    color: #1fff33;
+    text-decoration: none;
+}
+
+.footer__last--message {
+    text-align: center;
+}
+/*End Footer section*/
+
 /*Main media*/
 
 @media screen and (min-width: 843px) {
