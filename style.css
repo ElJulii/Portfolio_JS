@@ -162,7 +162,6 @@ header {
     border-bottom: var(--border-white);
     padding: 20px;
     background-color: var(--main-color);
-    height: 87dvh;
 }
 
 .introduction-section__img, .introduction-section__text-introduction {
@@ -255,53 +254,10 @@ h1 {
     background-color: #aaa;
 }
 
-.skill__value-container {
-    padding: 10px 0 0 0;
-    display: flex;
-    gap: 10px;
-}
-
-.skill__value__container-container {
-    border: solid 3px #aaa;
-    border-radius: 40px;
-    background-color: var(--second-color);
-    width: 80%;
-    height: 20px;
-}
-
 .skill__css p {
     color: var(--second-color);
 }
 
-.skill__value__container-value {
-    background-color: #222;
-    height: 100%;
-    border-radius: 40px 0 0 40px;
-}
-
-.percent-80 {
-    width: 80%;
-}
-
-.percent-70 {
-    width: 70%;
-}
-
-.percent-90 {
-    width: 90%;
-}
-
-.percent-100 {
-    width: 100%;
-    border-radius: 40px;
-}
-
-.skill__value__percent {
-    color: var(--second-color);
-    font-size: 1.6em;
-    position: relative;
-    bottom: 5px;
-}
 
 /*QR skills and presentation*/
 
@@ -550,16 +506,7 @@ h1 {
     .main__skills-section {
         flex-grow: 10;
         background: #222 none;
-        border-bottom: solid 2px white;
-    }
-
-    .skill__value__container-container {
-        border-color: white;
-        background-color: white;
-    }
-
-    .skill__value__container-value {
-        background-color: black;
+        border-bottom: var(--border-white);
     }
 
     .content-section-block {
