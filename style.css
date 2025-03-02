@@ -4,7 +4,11 @@
     margin: 0;
 }
 body {
-    background-color: #000;
+    --main-color: #000;
+    --second-color: #fff;
+    --plus-color: #3FDB49;
+    --border-white: solid 2px white;
+    background-color: var(--main-color);
 }
 
 /*NAV SECTION AND HEADER SECTION*/
@@ -17,12 +21,12 @@ header {
     height: 10vh;
     container-type: inline-size;
     container-name: header;
-    border-bottom: solid 2px white;
+    border-bottom: var(--border-white);
 }
 
 .header__mark {
     display: inline;
-    color: white;
+    color: var(--second-color);
     position: relative;
     left: 25px;
     top: 25px;
@@ -35,7 +39,7 @@ header {
     right: 10px;
     top: 10px;
     cursor: pointer;
-    color: #3FDB49;
+    color: var(--plus-color);
 }
 
 .nav__checkbox, .nav__list {
@@ -64,7 +68,7 @@ header {
 }
 
 .nav__item a {
-    color: white;
+    color: var(--second-color);
     text-decoration: none;
     font-size: 1.4rem;
     transition-property: color;
@@ -72,7 +76,7 @@ header {
 }
 
 .nav__item a:hover {
-    color: #3FDB49;
+    color: var(--plus-color);
     text-shadow: 0 0 10px #1fff33;
 }
 
@@ -107,9 +111,9 @@ header {
 
     .nav__item:last-child a {
         padding: 7px 22px;
-        border: solid 2px white;
+        border: solid 2px var(--second-color);
         border-radius: 10px;
-        background-color: #3FDB49;
+        background-color: var(--plus-color);
         align-self: baseline;
         transition-property: background-color;
         transition-duration: 0.6s;
@@ -117,17 +121,17 @@ header {
 
     .nav__item a:not(.nav__item:last-child a):hover {
         text-decoration: underline;
-        color: white;
+        color: var(--second-color);
         text-shadow: none;
     }
 
     .nav__item:last-child a{
-        color: white;
+        color: var(--second-color);
         text-shadow: none;
     }
 
     .nav__item:last-child a:hover {
-        background-color: #3Fab49;
+        background-color: var(--plus-color);
     }
 }
 
@@ -135,9 +139,9 @@ header {
 /*Photo and introduction section*/
 
 .main__introduction-section {
-    border-bottom: solid 2px white;
+    border-bottom: var(--border-white);
     padding: 20px;
-    background-color: #000;
+    background-color: var(--main-color);
 }
 
 .introduction-section__img, .introduction-section__text-introduction {
@@ -160,7 +164,7 @@ header {
 
 h1 {
     padding-top: 30px;
-    color: white;
+    color: var(--second-color);
     text-align: center;
     line-height: 50px;
     font-weight: normal;
@@ -178,7 +182,7 @@ h1 {
 }
 
 .skills-section__tittle-text {
-    color: white;
+    color: var(--second-color);
     text-align: center;
     font-size: 1.5em;
 }
@@ -196,7 +200,7 @@ h1 {
 }
 
 .skill__text-container {
-    border: solid 2px white;
+    border: var(--border-white);
     border-radius: 7px;
     padding: 6px 15px;
     width: 25%;
@@ -239,13 +243,13 @@ h1 {
 .skill__value__container-container {
     border: solid 3px #aaa;
     border-radius: 40px;
-    background-color: white;
+    background-color: var(--second-color);
     width: 80%;
     height: 20px;
 }
 
 .skill__css p {
-    color: white;
+    color: var(--second-color);
 }
 
 .skill__value__container-value {
@@ -272,7 +276,7 @@ h1 {
 }
 
 .skill__value__percent {
-    color: white;
+    color: var(--second-color);
     font-size: 1.6em;
     position: relative;
     bottom: 5px;
@@ -290,7 +294,7 @@ h1 {
 
 /* MAIN     content section*/
 .main__content-section {
-    color: white;
+    color: var(--second-color);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -474,11 +478,11 @@ h1 {
 /*Footer section*/
 footer {
     margin-top: 50px;
-    padding: 30px;
+    padding: 20px;
     color: white;
     height: 30vh;
     line-height: 35px;
-    background-color: black;
+    background-color: #111;
     border-top: solid 3px white;
 }
 
