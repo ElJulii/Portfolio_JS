@@ -109,6 +109,10 @@ header {
         z-index: 1;
     }
 
+    .nav__item:not(.nav__item:last-child) {
+        position: relative;
+    }
+
     .nav__item:last-child a {
         padding: 7px 22px;
         border: solid 2px var(--second-color);
@@ -120,10 +124,10 @@ header {
     }
 
     .nav__item a:not(.nav__item:last-child a):hover {
-        text-decoration: underline;
-        color: var(--second-color);
+        color: var(--plus-color);
         text-shadow: none;
     }
+
 
     .nav__item:last-child a{
         color: var(--second-color);
@@ -131,8 +135,24 @@ header {
     }
 
     .nav__item:last-child a:hover {
+        background-color: #3Fab49;
+    }
+
+    .nav__item::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 3%;
+        width: 0;
+        transition: width 0.3s ease-in-out;
         background-color: var(--plus-color);
     }
+
+    .nav__item:hover:not(.nav__item:last-child)::after {
+        width: 100%;
+    }
+
 }
 
 /*MAIN PART*/
@@ -142,6 +162,7 @@ header {
     border-bottom: var(--border-white);
     padding: 20px;
     background-color: var(--main-color);
+    height: 87dvh;
 }
 
 .introduction-section__img, .introduction-section__text-introduction {
