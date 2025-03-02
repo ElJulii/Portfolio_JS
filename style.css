@@ -493,7 +493,7 @@ footer {
     gap: 10px;
 }
 
-.footer__container h4, .footer__container a {
+.footer__container a {
     display: inline-block;
 }
 
