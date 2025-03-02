@@ -476,7 +476,7 @@ h1 {
 }
 
 /*Footer section*/
-footer {
+.footer {
     margin-top: 50px;
     padding: 20px;
     color: white;
@@ -607,5 +607,17 @@ footer {
         margin-top: 10px;
         list-style: none;
         font-size: 1.3rem;
+    }
+    /*Footer*/
+    .footer {
+        height: 20dvh;
+        display: flex;
+        gap: 25%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer > p {
+        font-size: 1rem;
     }
 }
