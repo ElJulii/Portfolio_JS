@@ -171,7 +171,7 @@ header {
 .introduction-section__img {
     background-image: url("images-folder/yo.jpeg");
     background-position: 100% center;
-    background-size: 120%;
+    background-size: cover;
     max-width: 350px;
     height: 400px;
     border: solid 2px #3FDB49;
@@ -192,7 +192,7 @@ h1 {
 }
 
 /* section of skills */
-.main__skills-section {
+.main__container-introduction-skills {
     container-type: inline-size;
     container-name: skills;
 }
@@ -236,7 +236,7 @@ h1 {
 }
 
 .skill__css {
-    background-color: #190DFF;
+    background-color: #060669;
 }
 
 .skill__html {
@@ -244,30 +244,42 @@ h1 {
 }
 
 .skill__react {
-    background-color: #11cfff;
+    background-color: #1e85a9;
 }
 
 .skill__git {
-    background-color: #F28D09;
+    background-color: #2d0602;
 }
 
 .skill__uix {
-    background-color: #aaa;
+    background-color: #18274e;
 }
 
-.skill__css p {
+.skills-container__skill:not(.skills-container__skill:first-child) p {
     color: var(--second-color);
 }
 
-
+.skills-container__img {
+    display: none;
+}
 /*QR skills and presentation*/
 
-@container skills (min-width: 632px) {
-    /*.skills-section__skills-container {*/
-    /*    display: grid;*/
-    /*    grid-template-rows: repeat(3, 1fr);*/
-    /*    grid-template-columns: repeat(2, 1fr);*/
-    /*}*/
+@container skills (min-width: 829px) {
+    .skills-container__img {
+        display: initial;
+        max-width: 100%;
+        max-height: 140px;
+        margin-top: 10px;
+        transition: scale 0.25s ease-out;
+    }
+
+    .skills-container__img:hover {
+        scale: 110%;
+    }
+
+    .skills-container__skill {
+        max-height: 200px;
+    }
 }
 
 /* MAIN     content section*/
