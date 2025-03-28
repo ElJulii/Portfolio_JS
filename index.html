@@ -15,10 +15,10 @@
         <label class="nav__label-checkbox" for="id__nav__checkbox">=</label>
         <input class="nav__checkbox" id="id__nav__checkbox" type="checkbox">
         <ul class="nav__list">
-            <li class="nav__item"><a href="#content-section__experience-id">Experience</a></li>
-            <li class="nav__item"><a href="#main__container-projects--id">Projects</a></li>
-            <li class="nav__item"><a href="#content-section__cv-id">CV</a></li>
-            <li class="nav__item"><a href="#content-section__contact-id">Contact</a></li>
+            <li class="nav__item"><a class="nav__link" onclick="closeNavList()"  href="#content-section__experience-id">Experience</a></li>
+            <li class="nav__item"><a class="nav__link" onclick="closeNavList()" href="#main__container-projects--id">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" onclick="closeNavList()" href="#content-section__cv-id">CV</a></li>
+            <li class="nav__item"><a class="nav__link" onclick="closeNavList()" href="#content-section__contact-id">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -144,5 +144,11 @@
 </footer>
 <script src="function_languages.js"></script>
 <script src="function_projects.js"></script>
+<script>
+    const navCheckBox = document.querySelector('.nav__checkbox');
+    const closeNavList = () => {
+        navCheckBox.checked = false;
+    }
+</script>
 </body>
 </html>
