@@ -112,6 +112,9 @@
                 <li class="content-section__contact-item item-git"></li>
                 <li class="content-section__contact-item item-telegram"></li>
                 <li class="content-section__contact-item item-mail"></li>
+                <li class="content-section__copied-message">
+                    <p>You copied my Email! juli2003juli@ gmail.com</p>
+                </li>
             </ul>
         </section>
         <section id="content-section__cv-id" class="content-section__pending-container content-section-block"></section>
@@ -124,9 +127,12 @@
         <ul class="container-projects__projects-list">
             <li class="projects-list__item item-love item-banished"></li>
             <li class="projects-list__item item-latinDay item_project_mini"></li>
-            <li class="projects-list__row row-left"><</li>
-            <li class="projects-list__item item-schedule item_project_central"></li>
-            <li class="projects-list__row row-right">></li>
+
+            <li class="projects-list__item item-schedule item_project_central">
+                <p class="projects-list__row row-left"><</p>
+                <p class="projects-list__row row-right">></p>
+            </li>
+
             <li class="projects-list__item item-apartments item_project_mini"></li>
             <li class="projects-list__item item-beauty item-banished"></li>
         </ul>
@@ -142,6 +148,14 @@
         <p>Open to freelance work – <a href="#content-section__contact-id">let’s connect!</a></p>
     </div>
 </footer>
+
+<dialog class="main__dialog">
+    <form method="dialog" class="dialog__form">
+        <p class="dialog__text"></p>
+        <button>X</button>
+    </form>
+</dialog>
+
 <script src="function_languages.js"></script>
 <script src="function_projects.js"></script>
 <script src="script_links_contact.js"></script>

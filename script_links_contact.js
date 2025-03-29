@@ -1,4 +1,5 @@
 const contactList = document.querySelectorAll('.content-section__contact-item');
+const clipBoarMessage = document.querySelector('.content-section__copied-message');
 
 contactList.forEach((item, index)=> {
     item.addEventListener('click', async () => {
@@ -12,7 +13,10 @@ contactList.forEach((item, index)=> {
             case 2 :
                 try {
                     await navigator.clipboard.writeText('juli2003juli@gmail.com');
-                    alert('text copy');
+                    clipBoarMessage.style.display = 'initial';
+                    setTimeout(() => {
+                        clipBoarMessage.style.display = 'none';
+                    }, 5000)
                 } catch (e) {
                     console.error('error: ', e);
                 }

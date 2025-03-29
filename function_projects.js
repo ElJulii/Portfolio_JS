@@ -29,11 +29,11 @@ const right_arrow = document.querySelector('.row-right');
 const left_arrow = document.querySelector('.row-left');
 
 let projects = [
-    '/images-folder/projects/img-love.png',
-    '/images-folder/projects/img-latinDay.png',
-    '/images-folder/projects/img-calendar.png',
-    '/images-folder/projects/img-apartments.png',
-    '/images-folder/projects/img-beauty.png'
+    'images-folder/projects/img-love.png',
+    'images-folder/projects/img-latinDay.png',
+    'images-folder/projects/img-calendar.png',
+    'images-folder/projects/img-apartments.png',
+    'images-folder/projects/img-beauty.png'
 ]
 
 set_images_box(boxes, projects);
@@ -49,7 +49,7 @@ left_arrow.addEventListener('click', () => {
 })
 
 //Function of the arrows
-function change_img_position_right(array_images) {
+function change_img_position_left(array_images) {
     let saver = array_images[array_images.length - 1]
     for (let i = array_images.length - 1; i > -1; i--) {
         if (i === 0) {
@@ -59,7 +59,7 @@ function change_img_position_right(array_images) {
     return array_images;
 }
 
-function change_img_position_left(array_images) {
+function change_img_position_right(array_images) {
     let saver = array_images[0]
     for (let i = 0; i < array_images.length; i++) {
         if (i === array_images.length - 1) {
