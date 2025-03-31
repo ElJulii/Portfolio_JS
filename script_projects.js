@@ -1,6 +1,9 @@
 const mainBox = document.querySelector('.main__container-projects');
 const box = document.querySelector('.item_project_central');
 
+//names boxes
+const nameBoxes = document.querySelectorAll('.projects-list__item-name');
+
 // Adjust the size of item_project_central
 function updateBoxHeight() {
     const mainBoxWidth = mainBox.offsetWidth;
@@ -29,25 +32,25 @@ const right_arrow = document.querySelector('.row-right');
 const left_arrow = document.querySelector('.row-left');
 
 let projects = [
-    {id: 0, image : 'images-folder/projects/img-love.png', link: 'https://eljulii.github.io/love/'},
-    {id: 1, image : 'images-folder/projects/img-latinDay.png', link : 'https://latinos-kfu.netlify.app/'},
-    {id: 2, image : 'images-folder/projects/img-calendar.png', link : 'https://github.com/ElJulii/schedule_php'},
-    {id: 3, image : 'images-folder/projects/img-apartments.png', link : 'https://eljulii.github.io/Apartments_Laras/build/'},
-    {id: 4, image : 'images-folder/projects/img-beauty.png', link : 'https://www.figma.com/design/3pCcBdi4RqkmI8boaataUA/Web_beauty?node-id=0-1&t=UkI2Bu7hdei6sA2f-1'}
+    {id: 0, name : 'Web Love', image : 'images-folder/projects/img-love.png', link: 'https://eljulii.github.io/love/'},
+    {id: 1, name : 'Latin Day', image : 'images-folder/projects/img-latinDay.png', link : 'https://latinos-kfu.netlify.app/'},
+    {id: 2, name: 'Calendar',  image : 'images-folder/projects/img-calendar.png', link : 'https://github.com/ElJulii/schedule_php'},
+    {id: 3, name : 'Sale of Apartments',  image : 'images-folder/projects/img-apartments.png', link : 'https://eljulii.github.io/Apartments_Laras/build/'},
+    {id: 4, name : 'BeautySalon', image : 'images-folder/projects/img-beauty.png', link : 'https://www.figma.com/design/3pCcBdi4RqkmI8boaataUA/Web_beauty?node-id=0-1&t=UkI2Bu7hdei6sA2f-1'}
 ]
 
 
-set_images_box(boxes, projects);
+set_images_box(boxes, projects, nameBoxes);
 //events of the arrows
 right_arrow.addEventListener('click', (e) => {
     projects = change_img_position_right(projects);
-    set_images_box(boxes, projects);
+    set_images_box(boxes, projects, nameBoxes);
     e.stopPropagation()
 })
 
 left_arrow.addEventListener('click', (e) => {
     projects = change_img_position_left(projects);
-    set_images_box(boxes, projects);
+    set_images_box(boxes, projects, nameBoxes);
     e.stopPropagation()
 })
 
@@ -74,10 +77,13 @@ function change_img_position_right(array_images) {
 
 //Adding images to the boxes
 
-function set_images_box (array_boxes, array_projects) {
+function set_images_box (array_boxes, array_projects, name_boxes) {
     array_boxes.forEach((image, index ) => {
         image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 50))
     ,url("${array_projects[index].image}") center / 180% no-repeat`;
+    })
+    name_boxes.forEach((box, index) => {
+        box.textContent = `${array_projects[index].name}`
     })
 }
 

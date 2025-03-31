@@ -468,6 +468,17 @@ h1 {
     display: none;
 }
 
+.projects-list__item-name {
+    color: var(--plus-color);
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    transition: scale 0.2s ease-in-out;
+}
+
+.projects-list__item-name:hover {
+    scale: 1.1;
+}
+
 @container projects (min-width: 745px) {
 
     .container-projects__projects-list {
@@ -480,6 +491,7 @@ h1 {
         border-width: 2px;
         overflow: hidden;
         border-radius: 5%;
+        position: relative;
     }
 
     .item-banished {
@@ -519,6 +531,19 @@ h1 {
     .item_project_mini {
         pointer-events: none;
         flex-grow: 1;
+    }
+
+    .projects-list__item-name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        pointer-events: none;
+    }
+
+    .item_project_mini .projects-list__item-name {
+        display: none;
     }
 }
 

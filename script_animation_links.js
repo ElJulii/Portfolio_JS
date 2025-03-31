@@ -41,5 +41,5 @@ function animation(element) {
     setTimeout(() => {
         element.style.scale = '1';
         element.style.color = '#3FDB49';
-    }, 370)
+    }, 500)
 }
