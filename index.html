@@ -71,7 +71,7 @@
 
     <div class="main__content-section">
         <section id="content-section__experience-id" class="content-section__experience-container content-section-block">
-            <h2 class="content-section__title">Experience</h2>
+            <h2 class="content-section__title content-section__title--experience">Experience</h2>
             <ul class="content-section__experience-list content__list">
                 <li class="content-section__experience-item">Self-employed worker (Sold of web pages designs.</li>
                 <li class="content-section__experience-item">Projects for events of University.</li>
@@ -105,7 +105,7 @@
             </ul>
         </section>
         <section id="content-section__contact-id" class="content-section__contact-title-container content-section-block">
-            <h2 class="content-section__title">Contact</h2>
+            <h2 class="content-section__title content-section__title--contact">Contact</h2>
         </section>
         <section class="content-section__contact-info-container content-section-block">
             <ul class="content-section__contact-list content__list">
@@ -117,9 +117,9 @@
                 </li>
             </ul>
         </section>
-        <section id="content-section__cv-id" class="content-section__pending-container content-section-block"></section>
-        <section class="content-section__CV-container content-section-block">
-            <a href="https://docs.google.com/document/d/1dki3IOzUvBalwcTG-3k8DwXlNjyWLuMR/export?format=docx" download="JL_CV.docx">My CV Document</a>
+        <section class="content-section__pending-container content-section-block"></section>
+        <section id="content-section__cv-id" class="content-section__CV-container content-section-block">
+            <a class="content-section__linkCV" href="https://docs.google.com/document/d/1dki3IOzUvBalwcTG-3k8DwXlNjyWLuMR/export?format=docx" download="JL_CV.docx">My CV Document</a>
         </section>
     </div>
     <div id="main__container-projects--id" class="main__container-projects">
@@ -145,7 +145,7 @@
     </div>
     <div class="footer__last--message">
         <p>© 2025 JL. Built with ❤️ and JavaScript.</p>
-        <p>Open to freelance work – <a href="#content-section__contact-id">let’s connect!</a></p>
+        <p>Open to freelance work – <a class="footer__link-contact" href="#content-section__contact-id">let’s connect!</a></p>
     </div>
 </footer>
 
@@ -156,9 +156,10 @@
     </form>
 </dialog>
 
-<script src="function_languages.js"></script>
-<script src="function_projects.js"></script>
+<script src="script_languages.js"></script>
+<script src="script_projects.js"></script>
 <script src="script_links_contact.js"></script>
+<script src="script_animation_links.js"></script>
 <script>
     const navCheckBox = document.querySelector('.nav__checkbox');
     const closeNavList = () => {

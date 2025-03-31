@@ -80,6 +80,16 @@ header {
     text-shadow: 0 0 10px #1fff33;
 }
 
+    /*Header links*/
+.content-section__contact-title-container, .content-section__experience-container,
+.content-section__CV-container {
+    scroll-margin-top: 50vh;
+}
+
+.main__container-projects {
+    scroll-margin-top: 10vh;
+}
+
 /* container header*/
 
 @container header (min-width: 600px) {
@@ -356,6 +366,7 @@ h1 {
 }
 
 /*Contacts*/
+
 .content-section__contact-list {
     display: flex;
     gap: 10px;
