@@ -517,6 +517,7 @@ h1 {
     }
 
     .item_project_mini {
+        pointer-events: none;
         flex-grow: 1;
     }
 }

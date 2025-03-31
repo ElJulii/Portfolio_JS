@@ -29,23 +29,26 @@ const right_arrow = document.querySelector('.row-right');
 const left_arrow = document.querySelector('.row-left');
 
 let projects = [
-    'images-folder/projects/img-love.png',
-    'images-folder/projects/img-latinDay.png',
-    'images-folder/projects/img-calendar.png',
-    'images-folder/projects/img-apartments.png',
-    'images-folder/projects/img-beauty.png'
+    {id: 0, image : 'images-folder/projects/img-love.png', link: 'https://eljulii.github.io/love/'},
+    {id: 1, image : 'images-folder/projects/img-latinDay.png', link : 'https://latinos-kfu.netlify.app/'},
+    {id: 2, image : 'images-folder/projects/img-calendar.png', link : 'https://github.com/ElJulii/schedule_php'},
+    {id: 3, image : 'images-folder/projects/img-apartments.png', link : 'https://eljulii.github.io/Apartments_Laras/build/'},
+    {id: 4, image : 'images-folder/projects/img-beauty.png', link : 'https://www.figma.com/design/3pCcBdi4RqkmI8boaataUA/Web_beauty?node-id=0-1&t=UkI2Bu7hdei6sA2f-1'}
 ]
+
 
 set_images_box(boxes, projects);
 //events of the arrows
-right_arrow.addEventListener('click', () => {
+right_arrow.addEventListener('click', (e) => {
     projects = change_img_position_right(projects);
     set_images_box(boxes, projects);
+    e.stopPropagation()
 })
 
-left_arrow.addEventListener('click', () => {
+left_arrow.addEventListener('click', (e) => {
     projects = change_img_position_left(projects);
     set_images_box(boxes, projects);
+    e.stopPropagation()
 })
 
 //Function of the arrows
@@ -73,7 +76,15 @@ function change_img_position_right(array_images) {
 
 function set_images_box (array_boxes, array_projects) {
     array_boxes.forEach((image, index ) => {
-        image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-    ,url("${array_projects[index]}") center / 180% no-repeat`;
+        image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 50))
+    ,url("${array_projects[index].image}") center / 180% no-repeat`;
     })
 }
+
+//redirect to projects
+boxes.forEach((project, index) => {
+    project.addEventListener('click', () => {
+        console.log(projects[index].id)
+        window.open(projects[index].link);
+    })
+})
